@@ -12,9 +12,10 @@
 		F33C90DD1FC4C9C0006A32EB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C90DC1FC4C9C0006A32EB /* FirstViewController.swift */; };
 		F33C90DF1FC4C9C0006A32EB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C90DE1FC4C9C0006A32EB /* SecondViewController.swift */; };
 		F33C90E21FC4C9C0006A32EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C90E01FC4C9C0006A32EB /* Main.storyboard */; };
-		F33C90E41FC4C9C0006A32EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33C90E31FC4C9C0006A32EB /* Assets.xcassets */; };
 		F33C90E71FC4C9C0006A32EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33C90E51FC4C9C0006A32EB /* LaunchScreen.storyboard */; };
 		F33C90F41FC4ED54006A32EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33C90F31FC4ED54006A32EB /* GoogleService-Info.plist */; };
+		F33C90F61FC4EF15006A32EB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C90F51FC4EF15006A32EB /* DataService.swift */; };
+		F33C90FA1FC4F30F006A32EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33C90F91FC4F30F006A32EB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		F33C90DC1FC4C9C0006A32EB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F33C90DE1FC4C9C0006A32EB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F33C90E11FC4C9C0006A32EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F33C90E31FC4C9C0006A32EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33C90E61FC4C9C0006A32EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33C90E81FC4C9C0006A32EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33C90F31FC4ED54006A32EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F33C90F51FC4EF15006A32EB /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F33C90F91FC4F30F006A32EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,7 @@
 				F33C90EE1FC4CA11006A32EB /* Controller */,
 				F33C90DA1FC4C9BF006A32EB /* AppDelegate.swift */,
 				F33C90E01FC4C9C0006A32EB /* Main.storyboard */,
-				F33C90E31FC4C9C0006A32EB /* Assets.xcassets */,
+				F33C90F91FC4F30F006A32EB /* Assets.xcassets */,
 				F33C90E51FC4C9C0006A32EB /* LaunchScreen.storyboard */,
 				F33C90F31FC4ED54006A32EB /* GoogleService-Info.plist */,
 				F33C90E81FC4C9C0006A32EB /* Info.plist */,
@@ -130,6 +132,7 @@
 		F33C90F21FC4CA65006A32EB /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F33C90F51FC4EF15006A32EB /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,8 +201,8 @@
 			files = (
 				F33C90E71FC4C9C0006A32EB /* LaunchScreen.storyboard in Resources */,
 				F33C90F41FC4ED54006A32EB /* GoogleService-Info.plist in Resources */,
-				F33C90E41FC4C9C0006A32EB /* Assets.xcassets in Resources */,
 				F33C90E21FC4C9C0006A32EB /* Main.storyboard in Resources */,
+				F33C90FA1FC4F30F006A32EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +276,7 @@
 				F33C90DF1FC4C9C0006A32EB /* SecondViewController.swift in Sources */,
 				F33C90DB1FC4C9C0006A32EB /* AppDelegate.swift in Sources */,
 				F33C90DD1FC4C9C0006A32EB /* FirstViewController.swift in Sources */,
+				F33C90F61FC4EF15006A32EB /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
