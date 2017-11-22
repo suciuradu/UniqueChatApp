@@ -40,7 +40,16 @@ class DataService { //singleton class care e accesibila pentru orice clasa din a
         REF_USERS.child(uid).updateChildValues(userData)    //in userul cu acel uid, punem tot userData (email,USERNAMEpoate, etc)
     }
     
-
+    func uploadPost(withMessage message: String, forUID uid:String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool)->()) {
+        if groupKey != nil {
+            //trimitem in firebase la groups
+        } else {
+            REF_FEED.childByAutoId().updateChildValues(["content": message, "senderID": uid])
+            sendComplete(true)
+        }
+        
+    }
+    
 }
 
 

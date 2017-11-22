@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
          FirebaseApp.configure()
+        
+        if Auth.auth().currentUser == nil { //daca nu e nici un user logat
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")  //instanta la authVC
+            window?.makeKeyAndVisible()  // cel mai important viewcontoller
+            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+            // daca user e nil, instantiem authVC si apoi il przentam peste orice este prenzentat la momentul curent
+            
+        }
+        
         return true
     }
 
