@@ -24,7 +24,11 @@ class CreatePostVC: UIViewController {
         sendBtn.bindToKeyboard() //cand se incarca viewul, butonul de send va fi tot timpul legat de tastatura si de view
         //uibutton, uiimagine toate astea vin de la uiview si de asta putem sa atribuim functiile astea la orice uiview sibling
 
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.usernameLbl.text = Auth.auth().currentUser?.email
     }
 
     
